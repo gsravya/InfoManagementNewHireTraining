@@ -45,14 +45,14 @@ If not, we'll just use a local VM.
 6. Once the VM is ready, you can click on "Console" to the bottom right of the VM page to log in to the VM or you can use SSH. You need to know the password for the user `ubuntu` if you log into through the console. So, first you need to SSH and change password of the user `ubuntu` and then you can cotinue using the SSH or console.
 7. To  log in using SSH for Windows users, download [MobaXTerm](https://mobaxterm.mobatek.net/download.html) and follow the installation steps.
 8. After the installation, click on "Session" -> "SSH"
-1. `Basic SSH Settings` tab
-1. Give your VM's IP in Remote Host field of Basic SSH Settings. (The IP of your VM can be found out in the Summary tab of your VM page in Ravello page.)
-2. Check `Specify username` and give `ubuntu` in the textfield next to it.
-3. Make sure the port is `22` (this is the port for SSH).
-2. `Advanced SSH Settings` tab
-1. Check `Use private key` and select the private key file whch you have downloaded when you created the pair when you had the error while creating the VM.
-3. `Network Settings` tab - this is when you are on VPN. Skip this step if you are on Ethernet.
-1. Select `Proxy type` to `http` and in the `host` field, give `www-proxy.us.oracle.com`. Whe you are off VPN and on Ethernet, change `Proxy type` to `None`.
+   1. `Basic SSH Settings` tab
+      1. Give your VM's IP in Remote Host field of Basic SSH Settings. (The IP of your VM can be found out in the Summary tab of your VM page in Ravello page.)
+      2. Check `Specify username` and give `ubuntu` in the textfield next to it.
+      3. Make sure the port is `22` (this is the port for SSH).
+   2. `Advanced SSH Settings` tab
+      1. Check `Use private key` and select the private key file whch you have downloaded when you created the pair when you had the error while creating the VM.
+   3. `Network Settings` tab - this is when you are on VPN. Skip this step if you are on Ethernet.
+      1. Select `Proxy type` to `http` and in the `host` field, give `www-proxy.us.oracle.com`. Whe you are off VPN and on Ethernet, change `Proxy type` to `None`.
 9. Now, you successfully logged in to the VM.
 10. Change to `root` by giving `sudo -s`.
 11. Execute `passwd ubuntu` and give new password for the user. Retype the password when prompted.
